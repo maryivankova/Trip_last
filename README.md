@@ -1,4 +1,4 @@
-Hiking in Belarus (Trips)
+#h1 Hiking in Belarus (Trips)
 
 HOMEPAGE ![photo_2021-06-06_13-53-42](https://user-images.githubusercontent.com/82363107/120921937-fd4a4e00-c6ce-11eb-9f66-5e944c9f0b90.jpg)
 
@@ -8,3 +8,6 @@ ADMIN PAGE![photo_2021-06-06_14-01-48](https://user-images.githubusercontent.com
 
 
 TRIP PAGE(with map)![photo_2021-06-06_14-00-44](https://user-images.githubusercontent.com/82363107/120922035-a133f980-c6cf-11eb-827f-5b51eb663895.jpg)
+
+
+Functions
