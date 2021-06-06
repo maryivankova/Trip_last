@@ -1,0 +1,33 @@
+
+
+ <!DOCTYPE html>
+{% load static %}
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Food_places</title>
+
+
+
+
+ 
+</head>
+
+
+
+<body>
+
+    <p>Места для еды</p>
+        
+    {% for place in places %}
+    <tr class='success'>
+        <td>{{ place.title }}</td>
+        <td>{{ place.address }}</td>
+        
+    </tr>
+{% endfor %}
+        
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+
+    <!DOCTYPE html>
+            {% load static %}
+    <html >
+    <head>
+      <meta charset="UTF-8">
+      <title>Trip_main_form</title>
+      
+      
+      
+      <link rel="stylesheet" href="{% static 'main/style.css' %}" type="text/css">
+         
+    </head>
+  
+
+    
+    <body>
+      <h1>Заполни форму и получай уведомления о новых маршрутах!</h1>
+        <div id="wrapper">
+            <form action = "" method= "POST"> {% csrf_token %}
+                {{ form.as_p }}
+            
+                <button type="submit">Отправить</button>
+                <p>forgot your password? <a href="#">click here</a></p>
+            </form>
+
+
+
+
+            
+     
+      
+        </div>
+
+
+
+        <p class = "routs">
+          
+          <a href="/trip">
+            <img src="{%static "images/1.jpg" %}" class="logo" width="300" height="200" alt = "Маршрут"/>/
+          </a>
+          <a href="/trip">
+            <img src="{%static "images/2.jpg" %}" class="logo"  width="300" height="200"/>
+          </a>
+          <a href="/trip">
+            <img src="{%static "images/3.jpg" %}" class="logo"  width="300" height="200"/>
+          </a>
+
+        </p>
+        
+      
+    </body>
+    </html>
+    
