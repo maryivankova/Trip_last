@@ -15,9 +15,9 @@ Functions
 Admin
 - Create Admin account using following command:
 
-After Login, can see Name of User and e-mail.
+After Login, we can see Name of User and e-mail.
 Can View, Update, Delete User.
-App_TimeTable: parse the site https://www.tripadvisor.ru/ and create data base with restrants and cafes during the trip.
+App_timetable: parse the site https://www.tripadvisor.ru/ and create data base with restrants and cafes during the trip.
 
 Map
 This example uses mapboxgl.Map to initialize a Mapbox map inside an HTML element on a webpage.
