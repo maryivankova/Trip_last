@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+{% load static %}
+
+   <html>
+  <head>
+    <title>Interactive maps for Django web apps</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'trip/style.css' %}" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Title</title>
+    <style>
+        p { text-indent: 25px; }
+    </style>
+    
+  </head>
+  <body>
+   <h1>Маршрут № 1: Минск-Ратомка-Минское море (ж/д станция) - Минск</h1>
+       
+   <div id="map" style='width: 50%; margin: 0 auto; display: flex; float:left; justify-content: left;  height: 400px;'>
+      
+    </div>
+    <p align="center" style="color:#1b1519; font-size:30px">
+        Описание маршрута:</p>
+    <p align="center" style="color:#1b1519; font-size:20px">
+            Ваш маршрут может начаться либо с Железнодорожного Вокзала Минск-Пассажирский, либо со станции Минск-Северный (это станция метро "Молодежная") и доехать до станции - Ратомка.<p>       После того, как вы сели в электричку, вам необходимо выйти на станции Ратомка. Вам необходимо пройти поселок насквозь, справа от движения электрички, и достичь красивейшего соснового леса.</p> <p>В лесу вы сможете насладиться зеленью травы и свежестью соснового воздуха летом, зимой - поиграть в снежки или прокатиться с горки на тюбинге, весной и осенью - это ближайшее место от Минска, где воцарилась тишина и покой, и где вы сможете отдохнуть от городской суеты.</p> <p> Точки на карте помогут Вам найти место для разведения костра. Там Вы сможете устроить пикник на берегу Минского моря, волны которого напомнают морской прибой.</p> </p>
+            
+   
+
+<script>
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFyeWl2IiwiYSI6ImNrcGZ5Ynd6NTBvMmgycG80czA2aGRpYW8ifQ.9PufF91hKcSLOEkPluOH9Q';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10',
+        center: [27.353633203601465, 53.95283049984106],
+        zoom: 12,
+        bearing: 180
+});
+
+    // Create ЖД Вокзал a default Marker and add it to the map.
+    var marker1 = new mapboxgl.Marker({ color: 'red', rotation: 45 })
+        .setLngLat([27.550834, 53.890567])
+        .addTo(map);
+
+    // Create Ратомка a default Marker and add it to the map.
+    var marker1 = new mapboxgl.Marker()
+    .setLngLat([27.346893, 53.941065])
+    .addTo(map);
+
+        
+    // Create Точа 1 a default Marker, colored black, rotated 45 degrees.
+    var marker2 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
+    .setLngLat([27.354474810820967,53.959136666827966])
+    .addTo(map);
+
+    
+    // Create Точа 3 камни a default Marker, colored black, rotated 45 degrees.
+    var marker3 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
+    .setLngLat([27.366695,53.954843])
+    .addTo(map);
+
+    // Create Точа 3 камни a default Marker, colored black, rotated 45 degrees.
+    var marker4 = new mapboxgl.Marker({ color: 'red', rotation: 45 })
+    .setLngLat([27.377931,53.94819],)
+    .addTo(map);
+
+
+map.on('load', function () {
+    map.addSource('route', {
+    'type': 'geojson',
+    'data': {
+        'type': 'Feature',
+        'properties': {},
+        'geometry': {
+            'type': 'LineString',
+            'coordinates': [
+               
+                [27.377931,53.94819],
+                [27.373711,53.95009],
+                [27.371560,53.953765],
+                [27.36893,53.95431],
+                [27.364023,53.955443],
+                [27.36027,53.95639],
+                
+                [27.35208,53.959761],
+                
+                [27.35328,53.959931],
+                [27.349764,53.960431],
+                [27.348595,53.960200], 
+                [27.342050,53.960913], 
+                [27.345216,53.961118],
+                [27.341675,53.956170],
+                [27.341578,53.9521076],
+                [27.346234,53.947567],
+                [27.346893, 53.941065]
+                
+                
+                
+               
+               
+        ]
+    }
+}
+});
+map.addLayer({
+    'id': 'route',
+    'type': 'line',
+    'source': 'route',
+    'layout': {
+    'line-join': 'round',
+    'line-cap': 'round'
+    },
+    'paint': {
+    'line-color': '#888',
+    'line-width': 4
+}
+});
+});
+
+
+
+</script>
+</body>
+
+</html>
