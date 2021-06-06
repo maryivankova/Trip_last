@@ -1,4 +1,4 @@
-#h1 Hiking in Belarus (Trips)
+Hiking in Belarus (Trips)
 
 HOMEPAGE ![photo_2021-06-06_13-53-42](https://user-images.githubusercontent.com/82363107/120921937-fd4a4e00-c6ce-11eb-9f66-5e944c9f0b90.jpg)
 
@@ -11,3 +11,12 @@ TRIP PAGE(with map)![photo_2021-06-06_14-00-44](https://user-images.githubuserco
 
 
 Functions
+
+Admin
+- Create Admin account using following command:
+
+HOW TO RUN THIS PROJECT
+Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
+Download This Project Zip Folder and Extract it
+Move to project folder in Terminal. Then run following Commands :
+
