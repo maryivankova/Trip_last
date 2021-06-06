@@ -29,6 +29,8 @@ The string value for accessToken should be a valid access token from a Mapbox us
 
 
 HOW TO RUN THIS PROJECT
+
+
 Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
 Download This Project Zip Folder and Extract it
 Move to project folder in Terminal. Then run following Commands :
