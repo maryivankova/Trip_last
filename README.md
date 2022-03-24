@@ -44,6 +44,5 @@ Now enter following URL in Your Browser Installed On Your Pc
 http://127.0.0.1:8000/
 
 Feedback
-Any suggestion and feedback is welcome. You can message me on facebook
-https://m.facebook.com/profile.php?ref=opera_for_android_speed_dial
+Any suggestion and feedback is welcome. You can message me on linkedin https://www.linkedin.com/in/maryia-ivankova-5b416b66/
 
